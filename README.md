@@ -28,7 +28,7 @@ To preserve the tree structure and enable manipulations, the following computed 
 ## Installation
 
 ```bash
-npm i @vuebro/flat-json-tree
+npm i @skaldapp/flat-json-tree
 ```
 
 ## API
@@ -78,7 +78,7 @@ Elements can contain arbitrary fields, but must have a unique identifier.
 ### Example using `useFlatJsonTree` composable
 
 ```js
-import useFlatJsonTree from "@vuebro/flat-json-tree";
+import useFlatJsonTree from "@skaldapp/flat-json-tree";
 
 const tree = [
   {
