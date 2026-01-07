@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.schemastore.org/package",
+  "name": "@vuebro/flat-json-tree",
+  "version": "2.2.15",
+  "description": "A Vue 3 composable that transforms JSON tree objects into flat arrays for easy manipulation with standard array operations while maintaining tree structure through computed properties",
+  "keywords": [
+    "vue",
+    "vue3",
+    "composable",
+    "json",
+    "tree",
+    "flat",
+    "array",
+    "manipulation",
+    "reactive",
+    "data-structures",
+    "hierarchy",
+    "nested",
+    "traversal",
+    "navigation"
+  ],
+  "homepage": "https://github.com/vuebro/flat-json-tree#readme",
+  "bugs": {
+    "url": "https://github.com/vuebro/flat-json-tree/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuebro/flat-json-tree.git"
+  },
+  "license": "AGPL-3.0-only",
+  "author": "Jerry Bruwes <jbruwes@gmail.com> (https://jbruwes.github.io)",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ."
+  },
+  "prettier": "@vuebro/configs/prettierrc",
+  "dependencies": {
+    "random-word-slugs": "^0.1.7",
+    "vue": "^3.5.26"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@vuebro/configs": "^1.2.34",
+    "eslint": "^9.39.2"
+  }
+}
