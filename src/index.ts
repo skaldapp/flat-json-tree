@@ -84,6 +84,7 @@ export default (
         nodes.value.map((node) => [node[keyId] as string, node]),
       ),
     ),
+    // eslint-disable-next-line sonarjs/cognitive-complexity
     run = (pId: string, action: string) => {
       const the = kvNodes.value[pId];
       if (the) {
@@ -153,7 +154,7 @@ export default (
             break;
         }
       }
-      return;
+      return undefined;
     };
 
   return {
