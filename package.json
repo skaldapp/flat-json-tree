@@ -48,7 +48,7 @@
     "vue": "^3.5.30"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.73",
+    "@skaldapp/configs": "^1.2.74",
     "@types/node": "^25.5.0",
     "eslint": "^10.0.3"
   }
