@@ -45,7 +45,7 @@
   "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
     "random-word-slugs": "^0.1.7",
-    "vue": "^3.5.30"
+    "vue": "^3.5.31"
   },
   "devDependencies": {
     "@skaldapp/configs": "^1.2.78",
