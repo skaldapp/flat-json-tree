@@ -45,11 +45,11 @@
   "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
     "random-word-slugs": "^0.1.7",
-    "vue": "^3.5.31"
+    "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.83",
-    "@types/node": "^25.5.0",
-    "eslint": "^10.1.0"
+    "@skaldapp/configs": "^1.2.84",
+    "@types/node": "^25.5.2",
+    "eslint": "^10.2.0"
   }
 }
