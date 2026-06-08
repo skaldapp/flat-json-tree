@@ -158,14 +158,12 @@ export default (
     };
 
   return {
-    add: (pId: string) => run(pId, "add"),
-    addChild: (pId: string) => run(pId, "addChild"),
-    down: (pId: string) => run(pId, "down"),
     kvNodes,
-    left: (pId: string) => run(pId, "left"),
     nodes,
-    remove: (pId: string) => run(pId, "remove"),
-    right: (pId: string) => run(pId, "right"),
-    up: (pId: string) => run(pId, "up"),
+    ...Object.fromEntries(
+      ["add", "addChild", "down", "left", "remove", "right", "up"].map(
+        (key) => [key, (pId: string) => run(pId, key)],
+      ),
+    ),
   };
 };
