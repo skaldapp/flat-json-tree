@@ -5,7 +5,16 @@ import { computed, toRef } from "vue";
 
 export type unObject = Record<string, unknown>;
 
-const configurable = true,
+const actionNames = [
+    "add",
+    "addChild",
+    "down",
+    "left",
+    "remove",
+    "right",
+    "up",
+  ] as const,
+  configurable = true,
   getItems = (siblings: unObject[], parent?: unObject) =>
     [...siblings].reverse().map((node) => ({ node, parent, siblings }));
 
@@ -160,10 +169,11 @@ export default (
   return {
     kvNodes,
     nodes,
-    ...Object.fromEntries(
-      ["add", "addChild", "down", "left", "remove", "right", "up"].map(
-        (key) => [key, (pId: string) => run(pId, key)],
-      ),
-    ),
+    ...(Object.fromEntries(
+      actionNames.map((key) => [key, (pId: string) => run(pId, key)]),
+    ) as Record<
+      (typeof actionNames)[number],
+      (pId: string) => ReturnType<typeof run>
+    >),
   };
 };
